@@ -1,0 +1,8 @@
+<script>
+    function getQuery(){
+        var query=/query=(.+)/.exec(location.search);
+        return query?query[1]:undefined;
+    }
+    const query=getQuery();
+    if(query)window.location.href=query;
+</script>
